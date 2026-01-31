@@ -50,14 +50,14 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-6 justify-center items-center"
         >
-          <button className="group bg-gradient-to-r from-sage-600 to-sage-700 text-white px-10 py-4 rounded-full text-lg font-semibold hover:from-sage-700 hover:to-sage-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2">
+          <a href="#team" className="group bg-gradient-to-r from-sage-600 to-sage-700 text-white px-10 py-4 rounded-full text-lg font-semibold hover:from-sage-700 hover:to-sage-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2 inline-flex">
             <Users size={20} />
             <span>Join Our Team</span>
-          </button>
-          <button className="group bg-gradient-to-r from-terracotta-500 to-terracotta-600 text-white px-10 py-4 rounded-full text-lg font-semibold hover:from-terracotta-600 hover:to-terracotta-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2">
+          </a>
+          <a href="#donate" className="group bg-gradient-to-r from-terracotta-500 to-terracotta-600 text-white px-10 py-4 rounded-full text-lg font-semibold hover:from-terracotta-600 hover:to-terracotta-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2 inline-flex">
             <DollarSign size={20} />
             <span>Monthly Contribution</span>
-          </button>
+          </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
