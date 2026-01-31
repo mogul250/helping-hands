@@ -3,10 +3,11 @@ import { Calendar, Users, Heart, Home } from 'lucide-react';
 
 const ImpactTimeline = () => {
   const activities = [
-    { month: 'Sept 2025', description: 'Supported a family of 6.', image: 'https://via.placeholder.com/300x200?text=Family+of+6', icon: Home },
-    { month: 'Oct 2025', description: 'Aided 3 families (elderly, disabled, and 4-child family).', image: 'https://via.placeholder.com/300x200?text=3+Families', icon: Users },
-    { month: 'Nov/Dec 2025', description: 'Widows and large-scale food distribution.', image: 'https://via.placeholder.com/300x200?text=Widows+Food', icon: Heart },
-    { month: 'Jan 2026', description: 'Support for a family with 8 children.', image: 'https://via.placeholder.com/300x200?text=Family+of+8', icon: Calendar },
+    { month: 'Sept 2025', description: 'Supported a family of 6 with school supplies (introduced by Claudine).', image: 'https://via.placeholder.com/300x200?text=Family+of+6', icon: Home },
+    { month: 'Oct 2025', description: 'Aided 3 families, including an elderly lady, a disabled woman, and 4 children (introduced by Isabella).', image: 'https://via.placeholder.com/300x200?text=3+Families', icon: Users },
+    { month: 'Nov 2025', description: 'Provided food and clothing to 2 widows and their children (introduced by Charlotte).', image: 'https://via.placeholder.com/300x200?text=Widows+Food', icon: Heart },
+    { month: 'Dec 2025', description: 'Supported 9 families with rice and oil (introduced by Josiane).', image: 'https://via.placeholder.com/300x200?text=9+Families', icon: Calendar },
+    { month: 'Jan 2026', description: 'Delivered a massive supply of food, charcoal, and hygiene products to a family with 8 children (introduced by Dr. Miriam).', image: 'https://via.placeholder.com/300x200?text=Family+of+8', icon: Home },
   ];
 
   return (

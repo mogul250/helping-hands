@@ -3,14 +3,14 @@ import { Heart } from 'lucide-react';
 
 const Team = () => {
   const members = [
-    { name: 'Chantal', role: 'Coordinator/Account', color: 'from-terracotta-400 to-terracotta-500' },
-    { name: 'Dr. Miriam', role: 'Medical Advisor', color: 'from-blue-400 to-blue-500' },
-    { name: 'Isabella', role: 'Education Coordinator', color: 'from-green-400 to-green-500' },
-    { name: 'Claudine', role: 'Community Outreach', color: 'from-purple-400 to-purple-500' },
-    { name: 'Josiane', role: 'Volunteer Manager', color: 'from-pink-400 to-pink-500' },
-    { name: 'Eric', role: 'Logistics Coordinator', color: 'from-indigo-400 to-indigo-500' },
-    { name: 'Charlotte', role: 'Fundraising Lead', color: 'from-yellow-400 to-yellow-500' },
-    { name: 'Yvan', role: 'Program Director', color: 'from-red-400 to-red-500' },
+    { name: 'Chantal', role: 'Coordinator and Account Holder', color: 'from-terracotta-400 to-terracotta-500' },
+    { name: 'Dr. Miriam', role: 'Advisor', color: 'from-blue-400 to-blue-500' },
+    { name: 'Isabella', role: 'Social', color: 'from-green-400 to-green-500' },
+    { name: 'Yvan', role: 'Secretary', color: 'from-red-400 to-red-500' },
+    { name: 'Claudine', role: 'Member', color: 'from-purple-400 to-purple-500' },
+    { name: 'Josiane', role: 'Member', color: 'from-pink-400 to-pink-500' },
+    { name: 'Eric', role: 'Member', color: 'from-indigo-400 to-indigo-500' },
+    { name: 'Charlotte', role: 'Member', color: 'from-yellow-400 to-yellow-500' },
   ];
 
   return (

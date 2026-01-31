@@ -5,19 +5,19 @@ const ProgramCards = () => {
   const programs = [
     {
       title: 'Health Support',
-      description: 'Providing insurance and compassion to those in need. We ensure families have access to medical care and support during challenging times.',
+      description: 'Providing health insurance and medical compassion.',
       icon: Heart,
       color: 'from-red-400 to-pink-500',
     },
     {
       title: 'Education Aid',
-      description: 'Supporting students with uniforms, notebooks, and supplies. Education is the foundation of a brighter future for our children.',
+      description: 'Supplying school materials, notebooks, pens, and uniforms for children.',
       icon: BookOpen,
       color: 'from-blue-400 to-indigo-500',
     },
     {
       title: 'Basic Needs',
-      description: 'Ensuring access to food like rice, beans, oil, and clothing. No one should go without the essentials of daily life.',
+      description: 'Distributing food (rice, beans, maize/cassava flour, oil), clothing (igitenge, shoes), and household essentials (soap, charcoal).',
       icon: Home,
       color: 'from-green-400 to-teal-500',
     },

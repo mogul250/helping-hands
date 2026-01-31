@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <div className="mt-12 pt-8 border-t border-sage-700 text-center">
           <p className="text-sage-300">&copy; 2024 Helping Hands. All rights reserved.</p>
-          <p className="text-sage-300 mt-2">Made with ❤️ for a better world. Thank you for your support and compassion.</p>
+          <p className="text-sage-300 mt-2">Building Kindness. Change together.</p>
         </div>
       </div>
     </footer>

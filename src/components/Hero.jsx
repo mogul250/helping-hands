@@ -32,9 +32,17 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-xl md:text-2xl text-sage-600 mb-12 max-w-3xl mx-auto leading-relaxed"
+          className="text-xl md:text-2xl text-sage-600 mb-8 max-w-3xl mx-auto leading-relaxed"
         >
-          Hands that serve, hearts that love. Join us in bringing hope and compassion to those in need.
+          Hands that serve, hearts that love: bring hope, compassion, and support to those in need.
+        </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="text-lg text-sage-700 mb-12 max-w-2xl mx-auto"
+        >
+          Since September 2025, we've supported over 15 families through our monthly activities, building a world on compassion and unity.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

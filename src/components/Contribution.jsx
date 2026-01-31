@@ -17,7 +17,7 @@ const Contribution = () => {
             10k won can change someone's life
           </p>
           <p className="text-lg text-sage-500 mt-4 max-w-2xl mx-auto">
-            Your generosity provides hope, nourishment, and opportunity to families in need. Every contribution, no matter the size, makes a real difference.
+            Membership fee: 10,000 won per member. Your generosity provides hope, nourishment, and opportunity to families in need. Every contribution, no matter the size, makes a real difference.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

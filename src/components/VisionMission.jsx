@@ -29,7 +29,7 @@ const VisionMission = () => {
             </div>
             <blockquote className="text-xl italic text-sage-700 leading-relaxed mb-6 relative">
               <span className="text-6xl text-terracotta-300 absolute -top-2 -left-2">"</span>
-              "Sell your possessions and give to the poor. Provide purses for yourselves that will not wear out, a treasure in heaven that will never fail, where no thief comes near and no moth destroys."
+              "Give to the poor, you will have treasure in heaven."
               <span className="text-6xl text-terracotta-300 absolute -bottom-8 -right-2">"</span>
             </blockquote>
             <p className="text-sage-600 font-medium">- Luke 12:33</p>
@@ -48,7 +48,7 @@ const VisionMission = () => {
                 <h4 className="text-2xl font-bold text-sage-800">Our Vision</h4>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                To create a world where every person has access to basic needs, education, and healthcare, fostering communities built on compassion and mutual support.
+                Building a happy community by bringing hope to the hopeless.
               </p>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-lg border border-sage-100">
@@ -60,6 +60,17 @@ const VisionMission = () => {
               </div>
               <p className="text-gray-700 leading-relaxed">
                 To bring hope to the hopeless by providing essential support, education, and care to families in need, guided by faith and driven by love.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-xl shadow-lg border border-sage-100">
+              <div className="flex items-center mb-4">
+                <div className="bg-gradient-to-r from-sage-400 to-sage-500 p-3 rounded-full mr-4">
+                  <Target className="text-white" size={24} />
+                </div>
+                <h4 className="text-2xl font-bold text-sage-800">Community Profile</h4>
+              </div>
+              <p className="text-gray-700 leading-relaxed">
+                We serve families, children, and individuals facing limited resources and opportunities, helping them build brighter futures through compassion and support.
               </p>
             </div>
           </motion.div>
