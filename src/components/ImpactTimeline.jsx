@@ -1,13 +1,17 @@
 import { motion } from 'framer-motion';
 import { Calendar, Users, Heart, Home } from 'lucide-react';
+import img2 from "../assets/img2.jpg";
+import img3 from "../assets/img3.png";
+import img4 from "../assets/img4.png";
+import img5 from "../assets/img5.png";
 
 const ImpactTimeline = () => {
   const activities = [
-    { month: 'Sept 2025', description: 'Supported a family of 6 with school supplies (introduced by Claudine).', image: 'https://via.placeholder.com/300x200?text=Family+of+6', icon: Home },
-    { month: 'Oct 2025', description: 'Aided 3 families, including an elderly lady, a disabled woman, and 4 children (introduced by Isabella).', image: 'https://via.placeholder.com/300x200?text=3+Families', icon: Users },
-    { month: 'Nov 2025', description: 'Provided food and clothing to 2 widows and their children (introduced by Charlotte).', image: 'https://via.placeholder.com/300x200?text=Widows+Food', icon: Heart },
-    { month: 'Dec 2025', description: 'Supported 9 families with rice and oil (introduced by Josiane).', image: 'https://via.placeholder.com/300x200?text=9+Families', icon: Calendar },
-    { month: 'Jan 2026', description: 'Delivered a massive supply of food, charcoal, and hygiene products to a family with 8 children (introduced by Dr. Miriam).', image: 'https://via.placeholder.com/300x200?text=Family+of+8', icon: Home },
+    { month: 'Sept 2025', description: 'Supported a family of 6 with school supplies (introduced by Claudine).', image: 'img1' , icon: Home },
+    { month: 'Oct 2025', description: 'Aided 3 families, including an elderly lady, a disabled woman, and 4 children (introduced by Isabella).', image: img2, icon: Users },
+    { month: 'Nov 2025', description: 'Provided food and clothing to 2 widows and their children (introduced by Charlotte).', image: img3, icon: Heart },
+    { month: 'Dec 2025', description: 'Supported 9 families with rice and oil (introduced by Josiane).', image: img4, icon: Calendar },
+    { month: 'Jan 2026', description: 'Delivered a massive supply of food, charcoal, and hygiene products to a family with 8 children (introduced by Dr. Miriam).', image: img5, icon: Home },
   ];
 
   return (
@@ -43,7 +47,7 @@ const ImpactTimeline = () => {
                       </div>
                       <h3 className="text-2xl font-bold text-sage-800">{activity.month}</h3>
                     </div>
-                    <img src={activity.image} alt={activity.description} className="w-full h-40 object-cover rounded-lg mb-4 shadow-md" />
+                    <img src={activity.image} alt={activity.description} className="w-full h-[420px] object-contain rounded-lg mb-4 shadow-md" />
                     <p className="text-gray-700 text-lg leading-relaxed">{activity.description}</p>
                   </div>
                 </div>
