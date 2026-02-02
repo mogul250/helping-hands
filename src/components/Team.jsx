@@ -1,16 +1,22 @@
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import team1 from '../assets/team1.jpg';
+import team2 from '../assets/team2.png';
+import team3 from '../assets/team3.png';
+import team4 from '../assets/team4.png';
+import team5 from '../assets/team5.png';
+import team6 from '../assets/team6.png';
+import team7 from '../assets/team7.png';
 
 const Team = () => {
   const members = [
-    { name: 'Chantal', role: 'Coordinator and Account Holder', color: 'from-terracotta-400 to-terracotta-500' },
-    { name: 'Dr. Miriam', role: 'Advisor', color: 'from-blue-400 to-blue-500' },
-    { name: 'Isabella', role: 'Social', color: 'from-green-400 to-green-500' },
-    { name: 'Yvan', role: 'Secretary', color: 'from-red-400 to-red-500' },
-    { name: 'Claudine', role: 'Member', color: 'from-purple-400 to-purple-500' },
-    { name: 'Josiane', role: 'Member', color: 'from-pink-400 to-pink-500' },
-    { name: 'Eric', role: 'Member', color: 'from-indigo-400 to-indigo-500' },
-    { name: 'Charlotte', role: 'Member', color: 'from-yellow-400 to-yellow-500' },
+    { name: 'Chantal', role: 'Coordinator and Account Holder', color: 'from-terracotta-400 to-terracotta-500', image: team1 },
+    { name: 'Dr. Miriam', role: 'Social Advisor', color: 'from-blue-400 to-blue-500', image: team3 },
+    { name: 'Isabella', role: 'Secretary', color: 'from-green-400 to-green-500', image: team2 },
+    { name: 'Claudine', role: 'Advisor', color: 'from-purple-400 to-purple-500', image: team4 },
+    { name: 'Josiane', role: 'Member', color: 'from-pink-400 to-pink-500', image: team5 },
+    { name: 'Eric', role: 'Member', color: 'from-indigo-400 to-indigo-500', image:  team6},
+    { name: 'Charlotte', role: 'Member', color: 'from-yellow-400 to-yellow-500', image: team7 },
+    // { name: 'Yvan', role: 'member', color: 'from-red-400 to-red-500', image:'n/a' },
   ];
 
   return (
@@ -38,8 +44,8 @@ const Team = () => {
               whileHover={{ y: -10, scale: 1.05 }}
               className="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-sage-100 text-center group"
             >
-              <div className={`bg-gradient-to-r ${member.color} w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                <Heart className="text-white" size={32} />
+              <div className={`bg-gradient-to-r ${member.color} w-24 h-24 rounded-full mx-auto mb-4 p-1 group-hover:scale-110 transition-transform duration-300`}>
+                <img src={member.image} alt={member.name} className="w-full h-full object-cover rounded-full bg-white" />
               </div>
               <h3 className="text-xl font-bold text-sage-800 mb-2">{member.name}</h3>
               <p className="text-gray-600 text-sm">{member.role || 'Team Member'}</p>

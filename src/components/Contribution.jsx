@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { DollarSign, Heart, CreditCard } from 'lucide-react';
+import { DollarSign, Heart, CreditCard, X, Mail, Phone } from 'lucide-react';
 
 const Contribution = () => {
+  const [showContactPopup, setShowContactPopup] = useState(false);
+
   return (
     <section id="donate" className="py-24 bg-gradient-to-br from-terracotta-50 to-cream-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -73,19 +76,66 @@ const Contribution = () => {
               </div>
               <div className="bg-cream-50 p-4 rounded-lg border border-sage-200">
                 <p className="text-sm text-sage-600 mb-1">Account Holder</p>
-                <p className="text-lg font-semibold text-sage-800">Chantal</p>
+                <p className="text-lg font-semibold text-sage-800">AHOBANTEGEYE Chantal</p>
               </div>
             </div>
             <div className="mt-8 text-center">
               <p className="text-sm text-gray-500 mb-4">
                 For international transfers or questions, please contact us.
               </p>
-              <button className="bg-gradient-to-r from-terracotta-500 to-terracotta-600 text-white px-8 py-3 rounded-full hover:from-terracotta-600 hover:to-terracotta-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+              <button 
+                onClick={() => setShowContactPopup(true)}
+                className="bg-gradient-to-r from-terracotta-500 to-terracotta-600 text-white px-8 py-3 rounded-full hover:from-terracotta-600 hover:to-terracotta-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
                 Contact Us
               </button>
             </div>
           </motion.div>
         </div>
+
+        {/* Contact Popup */}
+        {showContactPopup && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4" onClick={() => setShowContactPopup(false)}>
+            <motion.div 
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="bg-white rounded-2xl p-8 max-w-md w-full relative shadow-2xl"
+              onClick={e => e.stopPropagation()}
+            >
+              <button 
+                onClick={() => setShowContactPopup(false)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X size={24} />
+              </button>
+              
+              <h3 className="text-2xl font-bold text-sage-800 mb-6 text-center">Contact Information</h3>
+              
+              <div className="space-y-4">
+                <a href="mailto:ahchantal95@gmail.com" className="flex items-center space-x-4 p-4 rounded-xl bg-cream-50 hover:bg-terracotta-50 transition-colors border border-sage-100 group">
+                  <div className="bg-white p-2 rounded-full text-terracotta-500 shadow-sm group-hover:text-terracotta-600">
+                    <Mail size={20} />
+                  </div>
+                  <span className="text-sage-700 font-medium break-all">ahchantal95@gmail.com</span>
+                </a>
+                
+                <a href="tel:+8201021328995" className="flex items-center space-x-4 p-4 rounded-xl bg-cream-50 hover:bg-terracotta-50 transition-colors border border-sage-100 group">
+                  <div className="bg-white p-2 rounded-full text-terracotta-500 shadow-sm group-hover:text-terracotta-600">
+                    <Phone size={20} />
+                  </div>
+                  <span className="text-sage-700 font-medium">+82-010-21-328-995</span>
+                </a>
+
+                <a href="tel:+250788245476" className="flex items-center space-x-4 p-4 rounded-xl bg-cream-50 hover:bg-terracotta-50 transition-colors border border-sage-100 group">
+                  <div className="bg-white p-2 rounded-full text-terracotta-500 shadow-sm group-hover:text-terracotta-600">
+                    <Phone size={20} />
+                  </div>
+                  <span className="text-sage-700 font-medium">Tel: 250 788245476</span>
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        )}
       </div>
     </section>
   );

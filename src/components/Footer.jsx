@@ -14,15 +14,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Mail size={18} className="text-terracotta-400" />
-                <span>info@helpinghands.org</span>
+                <span>ahchantal95@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone size={18} className="text-terracotta-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>+82-010-21-328-995</span>
               </div>
               <div className="flex items-center space-x-2">
-                <MapPin size={18} className="text-terracotta-400" />
-                <span>123 Hope Street, Compassion City</span>
+                <Phone size={18} className="text-terracotta-400" />
+                <span>Tel: 250 788245476</span>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t border-sage-700 text-center">
-          <p className="text-sage-300">&copy; 2024 Helping Hands. All rights reserved.</p>
+          <p className="text-sage-300">&copy; {new Date().getFullYear()} Helping Hands. All rights reserved.</p>
           <p className="text-sage-300 mt-2">Building Kindness. Change together.</p>
         </div>
       </div>
