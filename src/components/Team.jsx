@@ -9,7 +9,7 @@ import team7 from '../assets/team7.png';
 
 const Team = () => {
   const members = [
-    { name: 'Chantal', role: 'Coordinator', color: 'from-terracotta-400 to-terracotta-500', image: team1 },
+    { name: 'Chantal', role: 'Presidente', color: 'from-terracotta-400 to-terracotta-500', image: team1 },
     { name: 'Dr. Miriam', role: 'Social Advisor', color: 'from-blue-400 to-blue-500', image: team3 },
     { name: 'Isabella', role: 'Secretary', color: 'from-green-400 to-green-500', image: team2 },
     { name: 'Claudine', role: 'Advisor', color: 'from-purple-400 to-purple-500', image: team4 },
