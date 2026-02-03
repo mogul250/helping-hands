@@ -59,7 +59,7 @@ const Hero = () => {
             <span>Monthly Contribution</span>
           </a>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -77,7 +77,7 @@ const Hero = () => {
             <div className="text-3xl font-bold text-sage-800">5</div>
             <div className="text-sm">Years of Service</div>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

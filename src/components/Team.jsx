@@ -9,14 +9,14 @@ import team7 from '../assets/team7.png';
 
 const Team = () => {
   const members = [
-    { name: 'Chantal', role: 'Coordinator and Account Holder', color: 'from-terracotta-400 to-terracotta-500', image: team1 },
+    { name: 'Chantal', role: 'Coordinator', color: 'from-terracotta-400 to-terracotta-500', image: team1 },
     { name: 'Dr. Miriam', role: 'Social Advisor', color: 'from-blue-400 to-blue-500', image: team3 },
     { name: 'Isabella', role: 'Secretary', color: 'from-green-400 to-green-500', image: team2 },
     { name: 'Claudine', role: 'Advisor', color: 'from-purple-400 to-purple-500', image: team4 },
     { name: 'Josiane', role: 'Member', color: 'from-pink-400 to-pink-500', image: team5 },
     { name: 'Eric', role: 'Member', color: 'from-indigo-400 to-indigo-500', image:  team6},
     { name: 'Charlotte', role: 'Member', color: 'from-yellow-400 to-yellow-500', image: team7 },
-    // { name: 'Yvan', role: 'member', color: 'from-red-400 to-red-500', image:'n/a' },
+    { name: 'Yvan', role: 'member', color: 'from-red-400 to-red-500', image:'n/a' },
   ];
 
   return (
