@@ -16,7 +16,7 @@ const Team = () => {
     { name: 'Josiane', role: 'Secretary', color: 'from-pink-400 to-pink-500', image: team5 },
     { name: 'Eric', role: 'Member', color: 'from-indigo-400 to-indigo-500', image:  team6},
     { name: 'Charlotte', role: 'Member', color: 'from-yellow-400 to-yellow-500', image: team7 },
-    { name: 'Yvan', role: 'member', color: 'from-red-400 to-red-500', image:'n/a' },
+    { name: 'Yvan', role: 'Member', color: 'from-red-400 to-red-500', image:'n/a' },
   ];
 
   return (
@@ -45,10 +45,16 @@ const Team = () => {
               className="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border border-sage-100 text-center group"
             >
               <div className={`bg-gradient-to-r ${member.color} w-24 h-24 rounded-full mx-auto mb-4 p-1 group-hover:scale-110 transition-transform duration-300`}>
-                <img src={member.image} alt={member.name} className="w-full h-full object-cover rounded-full bg-white" />
+                {member.image !== 'n/a' ? (
+                  <img src={member.image} alt={`Photo of ${member.name}, ${member.role}`} className="w-full h-full object-cover rounded-full bg-white" />
+                ) : (
+                  <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                    <span className="text-sage-500 text-xs font-semibold">No Image</span>
+                  </div>
+                )}
               </div>
               <h3 className="text-xl font-bold text-sage-800 mb-2">{member.name}</h3>
-              <p className="text-gray-600 text-sm">{member.role || 'Team Member'}</p>
+              <p className="text-gray-600 text-sm capitalize">{member.role || 'Team Member'}</p>
             </motion.div>
           ))}
         </div>

@@ -57,7 +57,7 @@ const ProgramCards = () => {
                 <p className="text-gray-600 text-center leading-relaxed">{program.description}</p>
                 <div className="mt-6 text-center">
                   <a href="#donate" className="bg-gradient-to-r from-sage-500 to-sage-600 text-white px-6 py-2 rounded-full hover:from-sage-600 hover:to-sage-700 transition-all duration-300 shadow-md hover:shadow-lg inline-block">
-                    Learn More
+                    Support this Program
                   </a>
                 </div>
               </motion.div>

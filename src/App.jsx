@@ -7,17 +7,21 @@ import ImpactTimeline from './components/ImpactTimeline'
 import Team from './components/Team'
 import Contribution from './components/Contribution'
 import Footer from './components/Footer'
+import Seo from './components/Seo'
 
 function App() {
   return (
     <div className="min-h-screen">
+      <Seo />
       <Navbar />
-      <Hero />
-      <VisionMission />
-      <ProgramCards />
-      <ImpactTimeline />
-      <Team />
-      <Contribution />
+      <main>
+        <Hero />
+        <VisionMission />
+        <ProgramCards />
+        <ImpactTimeline />
+        <Team />
+        <Contribution />
+      </main>
       <Footer />
     </div>
   )

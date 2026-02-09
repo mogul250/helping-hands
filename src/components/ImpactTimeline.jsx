@@ -47,7 +47,13 @@ const ImpactTimeline = () => {
                       </div>
                       <h3 className="text-2xl font-bold text-sage-800">{activity.month}</h3>
                     </div>
-                    <img src={activity.image} alt={activity.description} className="w-full h-[420px] object-contain rounded-lg mb-4 shadow-md" />
+                    {activity.image !== 'img1' ? (
+                      <img src={activity.image} alt={activity.description} className="w-full h-[420px] object-contain rounded-lg mb-4 shadow-md" />
+                    ) : (
+                      <div className="w-full h-[420px] bg-sage-100 rounded-lg mb-4 shadow-md flex items-center justify-center">
+                        <span className="text-sage-500">Image coming soon</span>
+                      </div>
+                    )}
                     <p className="text-gray-700 text-lg leading-relaxed">{activity.description}</p>
                   </div>
                 </div>
