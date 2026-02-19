@@ -6,6 +6,8 @@ import team4 from '../assets/team4.png';
 import team5 from '../assets/team5.png';
 import team6 from '../assets/team6.png';
 import team7 from '../assets/team7.png';
+import team8 from '../assets/team8.png';
+import team9 from '../assets/team9.jpeg';
 
 const Team = () => {
   const members = [
@@ -17,6 +19,8 @@ const Team = () => {
     { name: 'Eric', role: 'Member', color: 'from-indigo-400 to-indigo-500', image:  team6},
     { name: 'Charlotte', role: 'Member', color: 'from-yellow-400 to-yellow-500', image: team7 },
     { name: 'Yvan', role: 'Member', color: 'from-red-400 to-red-500', image:'n/a' },
+    { name: 'Kwizera', role: 'Member', color: 'from-red-400 to-red-500', image: team8 },
+    { name: 'Dr. Teddy', role: 'Member', color: 'from-red-400 to-red-500', image: team9 },
   ];
 
   return (
