@@ -42,7 +42,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-lg text-sage-700 mb-12 max-w-2xl mx-auto"
         >
-          Since September 2025, we've supported over 15 families through our monthly activities, building a world on compassion and unity.
+          Since September 2025, we've supported over 20 families through our monthly activities, building a world on compassion and unity.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
