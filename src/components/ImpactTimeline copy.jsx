@@ -18,8 +18,7 @@ const ImpactTimeline = () => {
     { month: 'Jan 2026', description: 'Delivered a massive supply of food, charcoal, and hygiene products to a family with 8 children (introduced by Dr. Miriam).', image: img5, icon: Home },
     { month: 'Feb 2026', description: "Supported a widow with 4 children, providing 10kgs of rice, 10kgs of maize flour, 10kgs of beans, 5kgs of sugar, 1kg of bar soap, 18 notebooks, 10 pens, and 3 litres of oil (introduced by Chantal).", image: img19, icon: Heart },
     { month: 'Mar 13 2026', description: 'Helping Hands supported women with starting capital of 100,000 FRW (introduced by Vice President Eric).', image: eric3, icon: Users },
-    { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry cans (introduced by Vice President Eric).', image: eric1, icon: Heart },
-    { month: 'Mar 2026', description: 'Additional session image for youth support (introduced by Vice President Eric).', image: eric2, icon: Heart },
+    { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry cans (introduced by Vice President Eric).', images: [eric1, eric2], icon: Heart },
   ];
 
   return (
@@ -55,7 +54,13 @@ const ImpactTimeline = () => {
                       </div>
                       <h3 className="text-2xl font-bold text-sage-800">{activity.month}</h3>
                     </div>
-                    {activity.image ? (
+                    {activity.images ? (
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        {activity.images.map((imgSrc, i) => (
+                          <img key={i} src={imgSrc} alt={`${activity.description} - image ${i + 1}`} className="w-full h-[200px] md:h-[260px] object-cover rounded-lg shadow-md" />
+                        ))}
+                      </div>
+                    ) : activity.image ? (
                       <img src={activity.image} alt={activity.description} className="w-full h-[420px] object-contain rounded-lg mb-4 shadow-md" />
                     ) : (
                       <div className="w-full h-[420px] bg-sage-100 rounded-lg mb-4 shadow-md flex items-center justify-center">
