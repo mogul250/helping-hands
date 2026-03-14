@@ -5,6 +5,9 @@ import img3 from "../assets/img3.png";
 import img4 from "../assets/img4.png";
 import img5 from "../assets/img5.png";
 import img19 from "../assets/img19.jpeg";
+import eric1 from "../assets/eric1 jpeg.jpeg";
+import eric2 from "../assets/eric2.jpeg";
+import eric3 from "../assets/eric3jpeg.jpeg";
 
 const ImpactTimeline = () => {
   const activities = [
@@ -14,6 +17,9 @@ const ImpactTimeline = () => {
     { month: 'Dec 2025', description: 'Supported 9 families with rice and oil (introduced by Josiane).', image: img4, icon: Calendar },
     { month: 'Jan 2026', description: 'Delivered a massive supply of food, charcoal, and hygiene products to a family with 8 children (introduced by Dr. Miriam).', image: img5, icon: Home },
     { month: 'Feb 2026', description: "Supported a widow with 4 children, providing 10kgs of rice, 10kgs of maize flour, 10kgs of beans, 5kgs of sugar, 1kg of bar soap, 18 notebooks, 10 pens, and 3 litres of oil (introduced by Chantal).", image: img19, icon: Heart },
+    { month: 'Mar 13 2026', description: 'Supported women with starting capital 100,000 FRW (introduced by Vice President Eric).', image: eric3, icon: Users },
+    { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry cans (introduced by Vice President Eric).', image: eric1, icon: Heart },
+    { month: 'Mar 2026 (session 2)', description: 'Supported young students with soap, rice, and jerry cans (introduced by Vice President Eric).', image: eric2, icon: Heart },
   ];
 
   return (
