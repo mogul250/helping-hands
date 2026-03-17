@@ -21,6 +21,7 @@ const Team = () => {
     { name: 'Yvan', role: 'Member', color: 'from-red-400 to-red-500', image:'n/a' },
     { name: 'Kwizera', role: 'IT', color: 'from-red-400 to-red-500', image: team8 },
     { name: 'Dr. Teddy', role: 'Member', color: 'from-red-400 to-red-500', image: team9 },
+    { name: 'Thacien', role: 'Member', color: 'from-red-400 to-red-500',  image:'n/a' },
   ];
 
   return (
