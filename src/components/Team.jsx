@@ -23,7 +23,7 @@ const Team = () => {
     { name: 'Yvan', role: 'Member', color: 'from-red-400 to-red-500', image:'n/a' },
     { name: 'Kwizera', role: 'IT', color: 'from-red-400 to-red-500', image: team8 },
     { name: 'Dr. Teddy', role: 'Member', color: 'from-red-400 to-red-500', image: team9 },
-    { name: 'Thacien', role: 'Member', color: 'from-red-400 to-red-500',  image:'n/a' },
+    { name: 'Thacien', role: 'Member', color: 'from-red-400 to-red-500',  image:'coming soon' },
     { name: 'Mr. Modeste', role: 'Member', color: 'from-cyan-400 to-cyan-500', image: team11 },
     { name: 'Mr. Donny', role: 'Member', color: 'from-orange-400 to-orange-500', image: team12 },
   ];
