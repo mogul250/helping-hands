@@ -23,7 +23,7 @@ const Team = () => {
     { name: 'Yvan', role: 'Member', color: 'from-red-400 to-red-500', image:'n/a' },
     { name: 'Kwizera', role: 'IT', color: 'from-red-400 to-red-500', image: team8 },
     { name: 'Dr. Teddy', role: 'Member', color: 'from-red-400 to-red-500', image: team9 },
-    { name: 'Thacien', role: 'Member', color: 'from-red-400 to-red-500',  image:'coming soon' },
+    { name: 'Thacien', role: 'Member', color: 'from-red-400 to-red-500',  image:'n/a' },
     { name: 'Mr. Modeste', role: 'Member', color: 'from-cyan-400 to-cyan-500', image: team11 },
     { name: 'Mr. Donny', role: 'Member', color: 'from-orange-400 to-orange-500', image: team12 },
   ];
@@ -58,7 +58,7 @@ const Team = () => {
                   <img src={member.image} alt={`Photo of ${member.name}, ${member.role}`} className="w-full h-full object-cover rounded-full bg-white" />
                 ) : (
                   <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                    <span className="text-sage-500 text-xs font-semibold">No Image</span>
+                    <span className="text-sage-500 text-xs font-semibold">No Photo</span>
                   </div>
                 )}
               </div>
