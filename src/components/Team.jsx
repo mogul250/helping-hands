@@ -24,8 +24,8 @@ const Team = () => {
     { name: 'Kwizera', role: 'IT', color: 'from-red-400 to-red-500', image: team8 },
     { name: 'Dr. Teddy', role: 'Member', color: 'from-red-400 to-red-500', image: team9 },
     { name: 'Thacien', role: 'Member', color: 'from-red-400 to-red-500',  image:'n/a' },
-    { name: 'Mr. Modeste', role: 'Member', color: 'from-cyan-400 to-cyan-500', image: team11 },
-    { name: 'Mr. Donny', role: 'Member', color: 'from-orange-400 to-orange-500', image: team12 },
+    { name: 'Modeste', role: 'Member', color: 'from-cyan-400 to-cyan-500', image: team11 },
+    { name: 'Donny', role: 'Member', color: 'from-orange-400 to-orange-500', image: team12 },
   ];
 
   return (
@@ -41,6 +41,9 @@ const Team = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-terracotta-400 to-sage-500 mx-auto rounded-full"></div>
           <p className="text-xl text-sage-600 mt-6 max-w-2xl mx-auto">
             Meet the compassionate hearts behind Helping Hands, working tirelessly to make a difference.
+          </p>
+          <p className="text-base text-sage-500 mt-4 max-w-3xl mx-auto">
+            We’re continually adding passionate volunteers and leaders—every new member helps us reach more families with support, education, and care.
           </p>
         </motion.div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
