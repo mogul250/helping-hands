@@ -6,8 +6,10 @@ import img4 from "../assets/img4.png";
 import img5 from "../assets/img5.png";
 import img19 from "../assets/img19.jpeg";
 import eric1 from "../assets/eric1 jpeg.jpeg";
-import eric2 from "../assets/eric2.jpeg";
 import eric3 from "../assets/eric3jpeg.jpeg";
+import bishop1 from "../assets/bishop 1.jpeg";
+import bishop2 from "../assets/bishop 2.jpeg";
+import bishop3 from "../assets/bishop3.jpeg";
 
 const ImpactTimeline = () => {
   const activities = [
@@ -19,6 +21,7 @@ const ImpactTimeline = () => {
     { month: 'Feb 2026', description: "Supported a widow with 4 children, providing 10kgs of rice, 10kgs of maize flour, 10kgs of beans, 5kgs of sugar, 1kg of bar soap, 18 notebooks, 10 pens, and 3 litres of oil (introduced by Chantal).", image: img19, icon: Heart },
     { month: 'Mar 13 2026', description: 'Supported women with starting capital 100,000 FRW (introduced by Vice President Eric).', image: eric3, icon: Users },
     { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry (introduced by Vice President Eric).', image: eric1, icon: Heart },
+    { month: 'Apr 14 2026', description: 'Supported two widowers with different basic needs and food for their families (introduced by Kwizera).', images: [bishop1, bishop2, bishop3], icon: Users },
   ];
 
   return (
@@ -54,7 +57,18 @@ const ImpactTimeline = () => {
                       </div>
                       <h3 className="text-2xl font-bold text-sage-800">{activity.month}</h3>
                     </div>
-                    {activity.image ? (
+                    {activity.images?.length ? (
+                      <div className="grid gap-4 grid-cols-1 sm:grid-cols-3 mb-4">
+                        {activity.images.map((img, imageIndex) => (
+                          <img
+                            key={imageIndex}
+                            src={img}
+                            alt={`${activity.description} photo ${imageIndex + 1}`}
+                            className="w-full h-[260px] object-cover rounded-lg shadow-md"
+                          />
+                        ))}
+                      </div>
+                    ) : activity.image ? (
                       <img src={activity.image} alt={activity.description} className="w-full h-[420px] object-contain rounded-lg mb-4 shadow-md" />
                     ) : (
                       <div className="w-full h-[420px] bg-sage-100 rounded-lg mb-4 shadow-md flex items-center justify-center">
