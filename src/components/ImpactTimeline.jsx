@@ -10,6 +10,7 @@ import eric3 from "../assets/eric3jpeg.jpeg";
 import bishop1 from "../assets/bishop 1.jpeg";
 import bishop2 from "../assets/bishop 2.jpeg";
 import bishop3 from "../assets/bishop3.jpeg";
+import yvanVideo from "../yvan.mp4";
 
 const ImpactTimeline = () => {
   const activities = [
@@ -22,6 +23,7 @@ const ImpactTimeline = () => {
     { month: 'Mar 13 2026', description: 'Supported women with starting capital 100,000 FRW (introduced by Vice President Eric).', image: eric3, icon: Users },
     { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry (introduced by Vice President Eric).', image: eric1, icon: Heart },
     { month: 'Apr 14 2026', description: 'Supported two widowers with different basic needs and food for their families (introduced by Kwizera).', images: [bishop1, bishop2, bishop3], icon: Users },
+    { month: 'May 2026', description: 'Supported a widow battling cancer with medical assistance, transport, and household essentials. Thank you to the community for making this possible.', video: yvanVideo, icon: Heart },
   ];
 
   return (
@@ -68,6 +70,11 @@ const ImpactTimeline = () => {
                           />
                         ))}
                       </div>
+                    ) : activity.video ? (
+                      <video controls className="w-full h-[420px] object-cover rounded-lg mb-4 shadow-md bg-black">
+                        <source src={activity.video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
                     ) : activity.image ? (
                       <img src={activity.image} alt={activity.description} className="w-full h-[420px] object-contain rounded-lg mb-4 shadow-md" />
                     ) : (
