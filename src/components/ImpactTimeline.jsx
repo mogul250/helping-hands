@@ -10,7 +10,7 @@ import eric3 from "../assets/eric3jpeg.jpeg";
 import bishop1 from "../assets/bishop 1.jpeg";
 import bishop2 from "../assets/bishop 2.jpeg";
 import bishop3 from "../assets/bishop3.jpeg";
-import yvanVideo from "../yvan.mp4";
+import yvanVideo from "../assets/yvan.mp4";
 
 const ImpactTimeline = () => {
   const activities = [
