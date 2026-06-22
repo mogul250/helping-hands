@@ -11,6 +11,7 @@ import bishop1 from "../assets/bishop 1.jpeg";
 import bishop2 from "../assets/bishop 2.jpeg";
 import bishop3 from "../assets/bishop3.jpeg";
 import yvanVideo from "../assets/yvan.mp4";
+import drTeddy from "../assets/Dr, teddy.jpeg";
 
 const ImpactTimeline = () => {
   const activities = [
@@ -24,6 +25,7 @@ const ImpactTimeline = () => {
     { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry (introduced by Vice President Eric).', image: eric1, icon: Heart },
     { month: 'Apr 14 2026', description: 'Supported two widowers with different basic needs and food for their families (introduced by Kwizera).', images: [bishop1, bishop2, bishop3], icon: Users },
     { month: 'May 2026', description: 'Supported a widow battling cancer with medical assistance, transport, and household essentials (introduced by Yvan). Thank you to the community for making this possible.', video: yvanVideo, icon: Heart },
+    { month: 'June 22 2026', description: 'Helping hand supported widow with starting capital (introduced by Dr. Teddy).', image: drTeddy, icon: Users },
   ];
 
   return (
