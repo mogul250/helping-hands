@@ -9,6 +9,7 @@ import eric1 from "../assets/eric1 jpeg.jpeg";
 import eric2 from "../assets/eric2.jpeg";
 import eric3 from "../assets/eric3jpeg.jpeg";
 import drTeddy from "../assets/Dr, teddy.jpeg";
+import thacien from "../assets/thacien.jpeg";
 
 const ImpactTimeline = () => {
   const activities = [
@@ -20,7 +21,7 @@ const ImpactTimeline = () => {
     { month: 'Feb 2026', description: "Supported a widow with 4 children, providing 10kgs of rice, 10kgs of maize flour, 10kgs of beans, 5kgs of sugar, 1kg of bar soap, 18 notebooks, 10 pens, and 3 litres of oil (introduced by Chantal).", image: img19, icon: Heart },
     { month: 'Mar 13 2026', description: 'Helping Hands supported women with starting capital of 100RW (introduced by Vice President Eric).', image: eric3, icon: Users },
     { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry cans (introduced by Vice President Eric).', images: [eric1, eric2], icon: Heart },
-    { month: 'June 22 2026', description: 'Helping hands supported a widow with starting capital of small business (introduced by Dr. Teddy).', image: drTeddy, icon: Users },
+    { month: 'Jul 16 2026', description: 'Helping Hands supported a living-alone mother with a small capital of 130,000 RFW.', image: thacien, icon: Users },
   ];
 
   return (
