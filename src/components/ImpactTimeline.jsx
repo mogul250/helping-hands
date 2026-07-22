@@ -26,7 +26,7 @@ const ImpactTimeline = () => {
     { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry (introduced by Vice President Eric).', image: eric1, icon: Heart },
     { month: 'Apr 14 2026', description: 'Supported two widowers with different basic needs and food for their families (introduced by Kwizera).', images: [bishop1, bishop2, bishop3], icon: Users },
     { month: 'May 2026', description: 'Supported a widow battling cancer with medical assistance, transport, and household essentials (introduced by Yvan). Thank you to the community for making this possible.', video: yvanVideo, icon: Heart },
-    { month: 'Jul 22 2026', description: 'Helping Hands supported a living-alone mother with a small capital of 130,000 RFW.', image: thacien, icon: Users },
+    { month: 'Jul 22 2026', description: 'Helping Hands supported a living-alone mother with a small capital of 130,000 RFW (introduced by Mr Thacien).', image: thacien, icon: Users },
   ];
 
   return (
