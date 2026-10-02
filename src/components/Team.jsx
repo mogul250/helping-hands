@@ -10,7 +10,9 @@ import team8 from '../assets/team8.png';
 import team9 from '../assets/team9.jpeg';
 import team11 from '../assets/team11.jpeg';
 import team13 from '../assets/Team13.jpeg';
- const Team = () => {
+import celebrationVideo from '../assets/helping hands team photos.mp4';
+
+const Team = () => {
   const members = [
     { name: 'Chantal', role: 'Presidente', color: 'from-terracotta-400 to-terracotta-500', image: team1 },
     { name: 'Dr. Miriam', role: 'Member', color: 'from-blue-400 to-blue-500', image: team3 },
@@ -44,6 +46,21 @@ import team13 from '../assets/Team13.jpeg';
             We’re continually adding passionate volunteers and leaders—every new member helps us reach more families with support, education, and care.
           </p>
         </motion.div>
+        <div className="mb-16 rounded-3xl overflow-hidden border border-sage-200 bg-white shadow-xl">
+          <div className="px-6 py-5 border-b border-sage-100 bg-sage-50">
+            <h3 className="text-3xl font-bold text-sage-800 text-center">Team Celebration Party</h3>
+          </div>
+          <div className="p-4 md:p-8">
+            <video
+              controls
+              className="w-full h-[360px] md:h-[500px] object-cover rounded-2xl bg-black shadow-md"
+            >
+              <source src={celebrationVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {members.map((member, index) => (
             <motion.div

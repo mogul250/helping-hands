@@ -13,6 +13,7 @@ import bishop3 from "../assets/bishop3.jpeg";
 import yvanVideo from "../assets/yvan.mp4";
 import drTeddy from "../assets/Dr, teddy.jpeg";
 import thacien from "../assets/thacien.jpeg";
+import rahabu from "../assets/Rababu .jpeg";
 
 const ImpactTimeline = () => {
   const activities = [
@@ -27,6 +28,7 @@ const ImpactTimeline = () => {
     { month: 'Apr 14 2026', description: 'Supported two widowers with different basic needs and food for their families (introduced by Kwizera).', images: [bishop1, bishop2, bishop3], icon: Users },
     { month: 'May 2026', description: 'Supported a widow battling cancer with medical assistance, transport, and household essentials (introduced by Yvan). Thank you to the community for making this possible.', video: yvanVideo, icon: Heart },
     { month: 'Jul 22 2026', description: 'Helping Hands supported a living-alone mother with a small capital of 130,000 RFW (introduced by Mr Thacien).', image: thacien, icon: Users },
+    { month: 'Sep 2026', description: 'Helping Hands supported an elderly woman with treatment aid through money (introduced by Rahabu).', image: rahabu, icon: Heart },
   ];
 
   return (
