@@ -10,6 +10,7 @@ import team8 from '../assets/team8.png';
 import team9 from '../assets/team9.jpeg';
 import team11 from '../assets/team11.jpeg';
 import team13 from '../assets/Team13.jpeg';
+import team20 from '../assets/team20.jpeg';
 import yvan from '../assets/YVAN .jpeg';
 import celebrationVideo from '../assets/helping hands team photos.mp4';
 
@@ -28,6 +29,7 @@ const Team = () => {
     { name: 'Dr. Teddy', role: 'Member', color: 'from-red-400 to-red-500', image: team9 },
     { name: 'Thacien', role: 'Member', color: 'from-red-400 to-red-500',  image: team13 },
     { name: 'Modeste', role: 'Member', color: 'from-cyan-400 to-cyan-500', image: team11 },
+    { name: 'Rahab', role: 'Member', color: 'from-cyan-400 to-cyan-500', image: team20 },
   ];
 
   return (
