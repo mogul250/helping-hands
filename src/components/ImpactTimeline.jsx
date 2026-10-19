@@ -16,6 +16,7 @@ import Thacien from "../assets/Thacien.jpeg";
 import rahabu from "../assets/Rababu .jpeg";
 import HelpingHands from "../assets/helping hands team photos.mp4";
 import modest8 from "../assets/modest8.jpeg";
+import channahImage from "../assets/M.channah .jpeg";
 
 
 const ImpactTimeline = () => {
@@ -33,6 +34,7 @@ const ImpactTimeline = () => {
     { month: 'Jun 2026', description: 'Through Helping Hands, Dr. Teddy supported a woman by providing her with starting capital.', image: drTeddy, icon: Users },
     { month: 'Jul 22 2026', description: 'Helping Hands supported a living-alone mother with a small capital of 130,000 RFW (introduced by Mr Thacien).', image: Thacien, icon: Users },
     { month: 'Aug 2026', description: 'Supported a young woman facing hardship with medical assistance (introduced by Modest).', image: modest8, icon: Heart },
+    { month: 'Sep 2026', description: 'Supported a family with a sick young child (introduced by M. Channah).', image: channahImage, icon: Heart },
     { month: 'Sep 2026', description: 'Helping Hands supported an elderly woman with treatment aid through money (introduced by Rahabu).', image: rahabu, icon: Heart },
     { month: 'Sep 2026', description: 'Helping hands team celebration (helping hands team).', video: HelpingHands, icon: Heart },
   ];
