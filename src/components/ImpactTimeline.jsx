@@ -10,6 +10,7 @@ import eric3 from "../assets/eric3jpeg.jpeg";
 import bishop1 from "../assets/bishop 1.jpeg";
 import bishop2 from "../assets/bishop 2.jpeg";
 import bishop3 from "../assets/bishop3.jpeg";
+
 import yvanVideo from "../assets/yvan.mp4";
 import drTeddy from "../assets/Dr, teddy.jpeg";
 import Thacien from "../assets/Thacien.jpeg";
@@ -31,7 +32,7 @@ const ImpactTimeline = () => {
     { month: 'Mar 2026', description: 'Supported young students with soap, rice, and jerry (introduced by Vice President Eric).', image: eric1, icon: Heart },
     { month: 'Apr 14 2026', description: 'Supported two widowers with different basic needs and food for their families (introduced by Kwizera).', images: [bishop1, bishop2, bishop3], icon: Users },
     { month: 'May 2026', description: 'Supported a widow battling cancer with medical assistance, transport, and household essentials (introduced by Yvan). Thank you to the community for making this possible.', video: yvanVideo, icon: Heart },
-    { month: 'Jun 2026', description: 'Through Helping Hands, Dr. Teddy supported a woman by providing her with starting capital.', image: drTeddy, icon: Users },
+    { month: 'Jun 2026', description: 'Through Helping Hands, Dr. Teddy supported a widow by providing startup capital for a small business.', image: drTeddy, icon: Users },
     { month: 'Jul 22 2026', description: 'Helping Hands supported a living-alone mother with a small capital of 130,000 RFW (introduced by Mr Thacien).', image: Thacien, icon: Users },
     { month: 'Aug 2026', description: 'Supported a young woman facing hardship with medical assistance (introduced by Modest).', image: modest8, icon: Heart },
     { month: 'Sep 2026', description: 'Supported a family with a sick young child (introduced by M. Channah).', image: channahImage, icon: Heart },
