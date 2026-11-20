@@ -18,6 +18,8 @@ import rahabu from "../assets/Rababu .jpeg";
 import HelpingHands from "../assets/helping hands team photos.mp4";
 import modest8 from "../assets/modest8.jpeg";
 import channahImage from "../assets/M.channah .jpeg";
+import family1 from "../assets/family 1.jpeg";
+import family2 from "../assets/family2.jpeg";
 
 
 const ImpactTimeline = () => {
@@ -38,6 +40,7 @@ const ImpactTimeline = () => {
     { month: 'Sep 2026', description: 'Supported a family with a sick young child (introduced by M. Channah).', image: channahImage, icon: Heart },
     { month: 'Sep 2026', description: 'Helping Hands supported an elderly woman with treatment aid through money (introduced by Rahabu).', image: rahabu, icon: Heart },
     { month: 'Sep 2026', description: 'Helping hands team celebration (helping hands team).', video: HelpingHands, icon: Heart },
+    { month: 'Nov 2026', description: 'Supported two families in November through Helping Hands (introduced by M. Teta).', images: [family1, family2], icon: Users },
   ];
 
   return (
